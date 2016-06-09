@@ -21,3 +21,22 @@ msgpack-python>=0.4.7
 ```
 $python setup.py install
 ```
+
+## Django Settings
+
+>
+```
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis_cluster.cache.RedisClusterCache',
+        "LOCATION": [
+            "redis://127.0.0.1:7000/0",
+            "redis://127.0.0.1:7001/0",
+            "redis://127.0.0.1:7002/0",
+        ],
+        'OPTIONS': {
+            "CLIENT_CLASS": "django_redis_cluster.client.DefaultClient",
+        }
+    }
+}
+```
