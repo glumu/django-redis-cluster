@@ -1,0 +1,4 @@
+Django>=1.9.6
+redis>=2.10.5
+redis-py-cluster>=1.2.0
+msgpack-python>=0.4.7
