@@ -4,6 +4,8 @@ Django Redis3.0+ 集群缓存应用
 
 由于 [django-redis](https://github.com/niwinz/django-redis) 不支持最新Redis3.0+集群服务，参考之开发了此应用，支持Django依赖Redis cluster作后台缓存服务。
 
+client api refer to [djagno-redis documentation](http://niwinz.github.io/django-redis/latest/).
+
 ## Requirement
 
 Python 3.0+
@@ -20,6 +22,7 @@ msgpack-python>=0.4.7
 
 ```
 $python setup.py install
+or
 $pip install django-redis-cluster
 ```
 
