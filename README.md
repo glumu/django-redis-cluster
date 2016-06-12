@@ -20,6 +20,7 @@ msgpack-python>=0.4.7
 
 ```
 $python setup.py install
+$pip install django-redis-cluster
 ```
 
 ## Django Settings
